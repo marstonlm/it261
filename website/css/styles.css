@@ -1,0 +1,93 @@
+/* Styles for my main website in it261 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: cornsilk;
+}
+
+header {
+  overflow: hidden;
+  background:lime;;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+#logo {
+  height:100px;
+  width: auto;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+nav {
+
+  height: 50px;
+  float: right;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  float: left;
+  list-style: none;
+  margin-left: 30px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+#wrapper {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+#hero {
+  height: 300px;
+  background: red;
+  margin-bottom: 20px;
+}
+
+/* values are based on a 940px grid*/
+/* 500 devided by 940 */
+main {
+  width: 61.7%;
+  height: 400px;
+  background: purple;
+  float: left;
+  margin-bottom: 20px;
+}
+
+aside {
+  background: pink;
+  width: 36.17%;
+  float: right;
+  height: 300px;
+}
+
+footer {
+  height: 50px;
+  line-height: 50px;
+  border-top: 1px dotted #333;
+  clear: both;
+}
+
+footer ul {
+  float: right;
+}
+
+footer li {
+  float: left;
+  list-style-type: none;
+  margin-left: 20px;
+}
