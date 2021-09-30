@@ -38,6 +38,8 @@ header {
 nav {
   height: 50px;
   float: right;
+  color: orange;
+  padding-right: 20px;
 }
 
 nav ul {
@@ -52,6 +54,7 @@ nav li {
 
 nav a {
   text-decoration: none;
+  color: orange;
 }
 
 .center {
