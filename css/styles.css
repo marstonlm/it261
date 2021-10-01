@@ -7,7 +7,7 @@
 }
 
 body {
-  background: cornsilk;
+  background:rgba(52, 58, 64, .15);;
 }
 
 hr {
@@ -79,7 +79,9 @@ nav a {
 #about img {
   height: 160px;
   float: left;
-  padding-right: 15px;
+  margin-right: 15px;
+  border: 1px solid black;
+  border-radius: 1.5px;
 }
  #hero p {
    padding-top: 15px;
@@ -91,7 +93,6 @@ nav a {
 /* 500 devided by 940 */
 main {
   width: 59.7%;
-  background: purple;
   float: left;
   margin-bottom: 20px;
   padding: 15px;
@@ -103,11 +104,12 @@ main {
 }
 
 aside {
-  background: pink;
-  margin: 20px;
+  background:rgba(52, 58, 64, .25);
+  padding-top: 35px;
+  padding-bottom: 35px;
   padding: 15px;
   width: 35.17%;
-  height: 100%;
+  height: 100vh;
   float: right;
 }
 

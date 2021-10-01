@@ -18,10 +18,9 @@
       <nav>
         <ul>
           <li><a href="index.php">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Daily</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Switch</a></li>
+          <li><a href="#">Emailable form</a></li>
+          <li><a href="#">Database</a></li>
           <li><a href="#">Gallery</a></li>
         </ul>
       </nav> 
@@ -61,6 +60,7 @@
               <li><a href="#">Coming Soon</a></li>
             </ul>
           </div>
+          <hr>
           <div>
             <h4>Week 3</h4>
             <ul class="week">
@@ -68,6 +68,7 @@
               <li><a href="#">Coming Soon</a></li>
             </ul>
           </div>
+          <hr>
           <div>
             <h4>Week 3</h4>
             <ul class="week">
@@ -75,26 +76,25 @@
               <li><a href="#">Coming Soon</a></li>
             </ul>
           </div>
-          
         </div>
       </aside>
     <!-- End Aside -->
-
    
 </div>
 <!-- End wrapper -->
+
  <footer>
    <div class="footer-inner">
       <ul>
-        <li>Copyright &copy; 2021</li>
+        <li>Copyright &copy; 2019-2021</li>
         <li>All Rights Reserved</li>
         <li><a href="#">Terms of use</a></li>
-        <li><a href="https://luannmarston.com">Web Design by Luann Marston</a></li>
-        <li><a href="https://validator.w3.org/">HTML Validation</a></li>
-        <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validations</a></li>
+        <li><a href="https://luannmarston.com" target="_blank">Web Design by Luann Marston</a></li>
+        <li><a href="https://validator.w3.org/" target="_blank">HTML Validation</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validations</a></li>
       </ul>
-</div>
+    </div>
 
-    </footer>
+  </footer>
 </body>
 </html>
