@@ -34,6 +34,19 @@ header {
   padding-right: 15px;
 }
 
+header h1 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, 
+    #f32170,
+    #ff6b08,  
+    #cf23cf,
+    #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding-left: 30px;
+}
+
 
 nav {
   height: 50px;
@@ -54,7 +67,16 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: orange;
+  color: #ff9e00;
+}
+
+nav a:hover {
+  color: #ff6d00;
+  font-weight: bolder;
+}
+
+nav a:visited {
+  color: #D2B7F5;
 }
 
 .center {
@@ -129,7 +151,7 @@ aside h4 {
 
 footer {
   overflow: hidden;
-  background:rgba(52, 58, 64, .75);
+  background:rgba(52, 58, 64, 1);
   border-top: 1px dotted #333;
   clear: both;
 }
@@ -141,12 +163,39 @@ footer {
   line-height: 50px;
 }
 
+footer p {
+  font-size: large;
+font-weight: 900;
+  background: linear-gradient(to right, 
+    #f32170,
+    #ff6b08,  
+    #cf23cf,
+    #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding-left: 30px;
+}
+
+
 footer ul {
   text-align: center;
-}
+} 
 
 footer li {
   float: left;
   list-style-type: none;
   margin-left: 20px;
+}
+
+footer a {
+  color: #ff9e00;
+}
+
+footer a:hover {
+  color: #ff6d00;
+  font-weight: bolder;
+}
+
+footer a:visited {
+  color: #D2B7F5
 }

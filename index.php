@@ -86,8 +86,8 @@
  <footer>
    <div class="footer-inner">
       <ul>
-        <li>Copyright &copy; 2019-2021</li>
-        <li>All Rights Reserved</li>
+        <li><p>Copyright &copy; 2019-2021</p></li>
+        <li><p>All Rights Reserved</p></li>
         <li><a href="#">Terms of use</a></li>
         <li><a href="https://luannmarston.com" target="_blank">Web Design by Luann Marston</a></li>
         <li><a href="https://validator.w3.org/" target="_blank">HTML Validation</a></li>
