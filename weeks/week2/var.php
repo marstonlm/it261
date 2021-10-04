@@ -157,6 +157,7 @@ echo $nav[0]; // indexed array
 echo '<br>';
 
 // associative array
+// index.php is the key of the array, and the Home is the value (key, value relationship)
 $nav['index.php'] = 'Home';
 $nav['about.php'] = 'About';
 $nav['daily.php'] = 'Daily';
@@ -169,5 +170,15 @@ $nav = array(
   'daily.php'=> 'Daily',
   'contact.php'=> 'Contact',
   'gallery.php'=> 'Gallery'
-
 );
+
+echo '<pre>';
+var_dump($nav);
+echo '</pre>';
+echo '<br>';
+
+$show = 'The Crown';
+$show_actor = 'Olivia Colman';
+$show_genre = 'Historical Fiction';
+
+echo 'My favoriate series during 2020 was "'.$show.'" staring, '.$show_actor.', and it is a '.$show_genre.' ';
