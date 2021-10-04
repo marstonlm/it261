@@ -41,11 +41,15 @@
         <div id="mamp">
           <h2>MAMP (XAMPP) Screenshot</h2>
           <img src="images/xampp.png" alt="mamp screenshot">
-          <h2>Error Screenshot</h2>
-          <img src="images/error.png" alt="mamp error screenshot">
+
+          <h2>Error in XAMPP Screenshot</h2>
+          <img src="images/error_xampp.png" alt="mamp error screenshot">
 
         </div>
-        <!-- End mamp -->
+        <!-- End mamp Assignment -->
+
+
+        </div>
 
       </main>
       <!-- End Main -->
