@@ -13,6 +13,8 @@
 
   td, th {
     border: 1px solid green;
+    padding: 5px;
+    text-align: left;
   }
 </style>
 </head>
@@ -36,17 +38,17 @@
 
     <tr>
       <th>Euros</th>
-      <td></td>
+      <td>$1416.00</td>
     </tr>
 
     <tr>
       <th>Yen</th>
-      <td></td>
+      <td>$18.80</td>
     </tr>
 
     <tr>
       <th>Total</th>
-      <td></td>
+      <td><strong>$6154.89</strong></td>
     </tr>
   </table>
 </body>
