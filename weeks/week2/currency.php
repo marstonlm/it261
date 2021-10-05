@@ -1,7 +1,5 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+
 
 // ------ understanding the logic!! ------
 /* 
@@ -101,4 +99,6 @@ $friendly_total = number_format($total,2);
 </html>
 
 
-
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
