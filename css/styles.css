@@ -1,20 +1,69 @@
 /* Styles for Luann's portal page */
 /* Styles for my main website in it261 */
+/* --- General styles --- */
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-size: 17px;
+  font-family: 'Playfair Display', serif;
+/*font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 
 body {
   background:rgba(52, 58, 64, .15);;
 }
 
-hr {
-  margin-top: 10px;
-  margin-bottom: 10px;
+h1 {
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
 }
 
+h2 {
+  font-size: 1.75em;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*p {
+  font-family: 'Playfair Display', serif;
+}*/
+
+a {
+  color: #3C096C;
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+  color: #3C096C;
+  font-weight: bolder;
+}
+
+a:visited {
+  color: #9D4EDD;
+  font-weight: bold;
+}
+
+/* --- Typography --- */
+
+h1 {
+  padding-left: 30px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- Header and Main Nav --- */
 header {
   overflow: hidden;
   background:rgba(52, 58, 64, 1);
@@ -28,32 +77,19 @@ header {
 #logo {
   height:100px;
   width: auto;
-  float: left;
   margin-left: 20px;
   margin-bottom: 20px;
   padding-right: 15px;
+  float: left;
+  
 }
-
-header h1 {
-  font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(to right, 
-    #f32170,
-    #ff6b08,  
-    #cf23cf,
-    #eedd44);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  padding-left: 30px;
-}
-
 
 nav {
   height: 50px;
+  padding-right: 20px;
   float: right;
   color: orange;
-  padding-right: 20px;
+  font-size: .5em;
 }
 
 nav ul {
@@ -61,14 +97,14 @@ nav ul {
 }
 
 nav li {
+  margin-left: 30px;
   float: left;
   list-style: none;
-  margin-left: 30px;
 }
 
 nav a {
-  text-decoration: none;
   color: #ff9e00;
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -80,101 +116,24 @@ nav a:visited {
   color: #D2B7F5;
 }
 
-.center {
-  text-align: center;
-}
-
-#wrapper {
-  max-width: 1100px;
-  margin: 20px auto;
-}
-
-#hero {
-  background: red;
-  margin-bottom: 20px;
-  padding: 15px;
-}
-
-#about {
-  padding: 15px;
-}
-
-#about img {
-  height: 160px;
-  float: left;
-  margin-right: 15px;
-  border: 1px solid black;
-  border-radius: 1.5px;
-}
- #hero p {
-   padding-top: 15px;
-   text-align: justify;
- }
-
-
-/* values are based on a 940px grid*/
-/* 500 devided by 940 */
-main {
-  width: 59.7%;
-  float: left;
-  margin-bottom: 20px;
-  padding: 15px;
-}
-
-#mamp img {
-  width: 95%;
-  padding: 15px;
-}
-
-aside {
-  background:rgba(52, 58, 64, .25);
-  padding-top: 35px;
-  padding-bottom: 35px;
-  padding: 15px;
-  width: 35.17%;
-  height: 100vh;
-  float: right;
-}
-
-aside ul {
-  padding-bottom: 10px;
-}
-
-aside li {
-  padding-left: 15px;
-  list-style: none;
-}
-
-aside h4 {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
+/* --- Footer --- */
 footer {
   overflow: hidden;
-  background:rgba(52, 58, 64, 1);
-  border-top: 1px dotted #333;
   clear: both;
+  border-top: 1px dotted #333;
+  background:rgba(52, 58, 64, 1);
+  font-size: .75em;
+  
 }
 
 .footer-inner {
-  max-width: 1100px;
-  margin: 20px auto;
   height: 50px;
   line-height: 50px;
+  max-width: 1100px;
+  margin: 20px auto;
 }
 
 footer p {
-  font-size: large;
-font-weight: 900;
-  background: linear-gradient(to right, 
-    #f32170,
-    #ff6b08,  
-    #cf23cf,
-    #eedd44);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
   padding-left: 30px;
 }
 
@@ -184,13 +143,14 @@ footer ul {
 } 
 
 footer li {
+  margin-left: 20px;
   float: left;
   list-style-type: none;
-  margin-left: 20px;
 }
 
 footer a {
   color: #ff9e00;
+  font-size: .75em;
 }
 
 footer a:hover {
@@ -200,4 +160,85 @@ footer a:hover {
 
 footer a:visited {
   color: #D2B7F5
+}
+
+ /* --- UTILITIES --- */
+.center {
+  text-align: center;
+}
+
+.gradient {
+  background: linear-gradient(to right, 
+    #ff6d00,
+    #ff9e00, 
+    #9d4edd,
+    /*#5a189a,*/
+    #9d4edd, 
+    #ff9e00,
+    #ff6d00);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+#wrapper {
+  max-width: 1100px;
+  margin: 0px auto;
+}
+
+#about {
+  padding: 15px;
+}
+
+#about img {
+  height: 160px;
+  margin-right: 15px;
+  float: left;
+  border: 1px solid black;
+  border-radius: 1.5px;
+}
+
+/* Values are based on a 940px grid */
+main {
+  background:rgba(52, 58, 64, .25);
+  width: 59.7%;
+  float: left;
+  /*margin-bottom: 20px; */
+  padding: 15px;
+}
+
+#mamp img {
+  width: 95%;
+  padding: 15px;
+}
+
+aside {
+  width: 35.17%;
+  height: 100vh;
+  float: right;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 15px;
+  background:rgba(52, 58, 64, .25);
+}
+
+aside > h3 {
+  margin-top: 24px;
+}
+
+aside li {
+  padding-left: 15px;
+  padding-bottom: 5px;
+  list-style: none;
+}
+
+aside h4 {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
