@@ -6,12 +6,12 @@
 }
 
 body {
-  background: cornsilk;
+  background: rgba(242, 205, 93, .25);
 }
 
 header {
   overflow: hidden;
-  background:lime;;
+  background:rgba(58, 23, 114, 1);
 }
 
 .header-inner {
@@ -25,6 +25,9 @@ header {
   float: left;
   margin-left: 20px;
   margin-bottom: 20px;
+  border: 1px solid rgb(222, 165, 75);
+  border-radius: 15px;
+
 }
 
 nav {
@@ -44,7 +47,19 @@ nav li {
 }
 
 nav a {
+  color: rgba(222, 165, 75, 1);
+  
   text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgba(58,23,114, .75);
+  font-weight: bold;
+}
+
+.current {
+  color: red;
+  font-weight: bold;
 }
 
 #wrapper {
@@ -54,7 +69,7 @@ nav a {
 
 #hero {
   height: 300px;
-  background: red;
+  background: rgba(83, 152, 190, 1);
   margin-bottom: 20px;
 }
 
@@ -63,13 +78,12 @@ nav a {
 main {
   width: 61.7%;
   height: 400px;
-  background: purple;
   float: left;
   margin-bottom: 20px;
 }
 
 aside {
-  background: pink;
+  background: rgba(215, 65, 167, .5);
   width: 36.17%;
   float: right;
   height: 300px;
@@ -78,7 +92,8 @@ aside {
 footer {
   height: 50px;
   line-height: 50px;
-  border-top: 1px dotted #333;
+  border-top: 1px dotted rgba(58, 23, 114, .90);
+  font-size: .75em;
   clear: both;
 }
 
@@ -90,4 +105,9 @@ footer li {
   float: left;
   list-style-type: none;
   margin-left: 20px;
+}
+
+.dog {
+  height: 25em;
+
 }
