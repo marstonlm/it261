@@ -3,23 +3,23 @@
 
 ?>
   <div id="wrapper">
+    <h1 style="text-align:center;"><?php echo $headline;?></h1>
     <main>
-      <h1><?php echo $headline;?></h1>
       <h2><?php echo $dog;?></h2>
-      <img class="dog" src="images/<?php echo $pic; ?>"  alt="<?php echo $alt;?>">
-      <p><?php echo $content;?></p>
+      <img class="dog" src="images/<?php echo $pic;?>"  alt="<?php echo $alt;?>">
+      <p class="textwrap-right"><?php echo $content;?></p>
     </main>
     <!-- End Main -->
     <aside>
-    <h2>Check out our Daily Specials</h2>
+    <h2 style="text-align:center;">Check out our Daily Featured Shepard</h2>
       <ul>
-        <li><a href="switch.php?today=Monday">Monday</a> </li>
-        <li><a href="switch.php?today=Tuesday">Tuesday</a> </li>
-        <li><a href="switch.php?today=Wednesday">Wednesday</a> </li>
-        <li><a href="switch.php?today=Thursday">Thursday</a> </li>
-        <li><a href="switch.php?today=Friday">Friday</a> </li>
-        <li><a href="switch.php?today=Saturday">Saturday</a> </li>
-        <li><a href="switch.php?today=Sunday">Sunday</a> </li>
+        <li><a href="daily.php?today=Monday">Monday</a> </li>
+        <li><a href="daily.php?today=Tuesday">Tuesday</a> </li>
+        <li><a href="daily.php?today=Wednesday">Wednesday</a> </li>
+        <li><a href="daily.php?today=Thursday">Thursday</a> </li>
+        <li><a href="daily.php?today=Friday">Friday</a> </li>
+        <li><a href="daily.php?today=Saturday">Saturday</a> </li>
+        <li><a href="daily.php?today=Sunday">Sunday</a> </li>
       </ul>
 
     </aside>
