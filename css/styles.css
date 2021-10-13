@@ -12,7 +12,7 @@
 }
 
 body {
-  background:rgba(52, 58, 64, .15);;
+  background:rgba(52, 58, 64, .15);
 }
 
 h1 {
@@ -241,4 +241,9 @@ aside li {
 aside h4 {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.coming-soon img {
+  width: 100%;
+  border: 15px solid rgba(52, 58, 64, 1);
 }
