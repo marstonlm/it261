@@ -37,35 +37,35 @@
       $coffee = '<h2>Thursday is our Cappuccino Day!</h2>';
       $pic = 'cap.jpg';
       $alt = 'Cappuccino';
-      $content = '<p>A cappuccino is a popular coffee drink that’s made by topping a shot of espresso with steamed milk and milk foam. <br>Typically, it contains equal parts of each and is made up of about 1/3 espresso, 1/3 steamed milk, and 1/3 foamed milk. <br> This gives the final product a creamy, rich, and smooth taste and texture.</p>';
+      $content = '<p>A <b><i>cappuccino</i></b> is a popular coffee drink that’s made by topping a shot of espresso with steamed milk and milk foam. <br>Typically, it contains equal parts of each and is made up of about 1/3 espresso, 1/3 steamed milk, and 1/3 foamed milk. <br> This gives the final product a creamy, rich, and smooth taste and texture.</p>';
       break;
 
     case 'Friday':
       $coffee = '<h2>Friday is our Americano Day!</h2>';
       $pic = 'americano.jpg';
       $alt = 'Americano';
-      $content = '<i>Coffee content</i>';
+      $content = 'An <b><i>Americano</i></b> made by layering expresso and hot water. We make our a traditional way with the espress over the water.';
       break;
 
     case 'Saturday':
       $coffee = '<h2>Saturday is our Regular Joe Day!</h2>';
       $pic = 'coffee.png';
       $alt = 'Coffee';
-      $content = '<i>Coffee content</i>';
+      $content = 'A <b><i>Regular Joe</i></b> may also be refered to as drip coffee. It is brewed in an automatic coffee maker which hasa filter. This coffee has less oils then an expresso or if made using a French press.';
       break;
 
     case 'Sunday':
       $coffee = '<h2>Sunday is our Green Tea Day!</h2>';
       $pic = 'green-tea.jpg';
       $alt = 'Green Tea';
-      $content = 'A <b>green tea latte</b> is a variation on green tea that is made in a similar way to a regular latte (one made with coffee). Green tea is one of the most popular tea varieties in the world, and the powdered form of green tea – known as matcha – is often used to prepare this frothy drink.';
+      $content = 'A <b><i>green tea latte</i></b> is a variation on green tea that is made in a similar way to a regular latte (one made with coffee). Green tea is one of the most popular tea varieties in the world, and the powdered form of green tea – known as matcha – is often used to prepare this frothy drink.';
       break;
 
     case 'Monday':
       $coffee = '<h2>Monday is our  Pumpkin Latte Day!</h2>';
       $pic = 'pumpkin.jpg';
       $alt = 'Pumkin Latte';
-      $content = '<i>Coffee content</i>';
+      $content = 'The <b><i>Pumpkin Spice Latte</i></b> is a coffee drink made with a mix of traditional autumn spice flavors of cinnamon, nutmeg, and clove, steamed milk, espresso, and often sugar, topped with whipped cream and pumpkin pie spice. The beverage is most commonly associated with Starbucks, which first offered the drink in 2003, and the season of fall.';
       break;
 
      case 'Tuesday':
@@ -76,10 +76,10 @@
       break;
 
     case 'Wednesday':
-      $coffee = '<h2>Wednesday is our  Day!</h2>';
-      $pic = '';
-      $alt = 'Missing picture';
-      $content = '<i>Coffee content</i>';
+      $coffee = '<h2>Wednesday is our Caramel Macchiato Latte Day!</h2>';
+      $pic = 'macchiato.jpg';
+      $alt = 'Caramel Macchiato Latte';
+      $content = 'A <b><i>macchiato</i></b> is an espresso-based beverage. Traditionally, a macchiato is a shot (or two) of espresso topped with a small amount of usually foamed milk, says <a href="https://theroasterie.com/blogs/news/macchiato-vs-latte-similarities-differences-in-your-favorite-coffee-drinks">The Roasterie</a>. In Italian, macchiato means "stained" or "spotted."<br>A caramel macchiato latte combines steamed milk, vanilla syrup and two shots of expresso poured over the top and carmel sauce drizzled on top.</p>';
       break;
 
   }
@@ -95,6 +95,9 @@
         width: 940px;
         margin: 20px auto;
       }
+      .pic {
+        max-width: 400px;
+      }
     </style>
   </head>
 
@@ -104,7 +107,7 @@
       <?php
         echo $coffee;
       ?>
-      <img src="images/<?php echo $pic; ?>"  alt="<?php echo $alt;?>">
+      <img class="pic" src="images/<?php echo $pic; ?>"  alt="<?php echo $alt;?>">
       <p><?php echo $content;?></p>
 
       <h2>Check out our Daily Specials</h2>

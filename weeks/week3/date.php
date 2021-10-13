@@ -20,7 +20,7 @@
   // Need to assign a time to a var
   $time = date("H:i");
   if($time <= 11) {
-    echo '<h2 style="color: yellow;">Goood Morning Lou</h2>';
+    echo '<h2 style="color: purple;">Goood Morning Lou</h2>';
   } elseif($time <= 16) {
     echo '<h2 style="color: lightblue;"><Good Afternoon Lou</h2>';
   } else {
