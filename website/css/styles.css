@@ -91,13 +91,14 @@ main {
 
 
 aside {
-  width: 36.17%;
-  height: 100%;
-  margin: 20px auto;
-  padding: 15px;
+  width: 35.17%;
   float: right;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 15px;
   background: rgba(215, 65, 167, .5);
-  border: 1px solid rgba(215, 65, 167, .5);
+
+  border: 1px solid rgba(215, 65, 167, 1);
   border-radius: 15px;
 }
 
@@ -112,7 +113,7 @@ aside h2 {
 footer {
   height: 50px;
   line-height: 50px;
-  border-top: 1px dotted rgba(58, 23, 114, .90);
+  border-top: 3px dotted rgba(58, 23, 114, .90);
   font-size: .75em;
   clear: both;
 }

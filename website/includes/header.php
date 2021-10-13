@@ -64,14 +64,14 @@ error_reporting(E_ALL);
 
   switch($today) {
     case 'Sunday':
-      $dog = '<h2>Sunday: Old English Sheepdog</h2>';
+      $dog = 'Sunday: Old English Sheepdog';
       $pic = 'english.jpg';
       $alt = 'Old English Sheepdog';
       $content = 'The <b>Old English Sheepdog</b> is the archetypical shaggy dog, famous for his profuse coat and peak-a-boo hairdo, a distinctive bear-like gait, and a mellow, agreeable nature. The OES is a big, agile dog who enjoys exploring and a good romp.<br> Beneath the Old English Sheepdog\'s profuse double coat is a muscular and compact drover, with plenty of bone and a big rump, standing 21 or 22 inches at the shoulder. Their eyes (when you can see them) are dark brown, or blue, or one of each. The OES breed standard says the skull is \'capacious and rather squarely formed, giving plenty of room for brain power.\' OES move with a bear-like shuffle but are famous for their nimbleness afoot. Regular exercise is required for these strong, able-bodied workers. Equally famed are their many fine housedog qualities: watchfulness, courage, kindliness, and intelligence. Great with children, OES make patient, protective playmates. They are sensible watchdogs known for a loud, ringing bark.';
       break;
 
     case 'Monday':
-      $dog = '<h2>Monday: Beauceron </h2>';
+      $dog = 'Monday: Beauceron';
       $pic = 'beauceron.jpg';
       $alt = 'Beauceron';
       $content = 'The Beauceron is imposing and powerful, but also remarkably smart, spirited, and a versatile herder\'imagine a Border Collie\'s brain in a 100-pound body. They are especially beloved by women as a dashing but sensitive companion and protector.<br><br>
@@ -79,7 +79,7 @@ error_reporting(E_ALL);
       break;
 
      case 'Tuesday':
-      $dog = '<h2>Tuesday: Icelandic Sheepdog</h2>';
+      $dog = 'Tuesday: Icelandic Sheepdog';
       $pic = 'iceland.jpg';
       $alt = 'Icelandic Sheepdog';
       $content = 'The Icelandic Sheepdog, Iceland\'s only native dog breed, is a charmingly friendly and faithful all-around herder of small-to-medium size. A densely coated Nordic spitz-type breed, Icelandics are enthusiastically devoted to their humans.<br><br>
@@ -87,7 +87,7 @@ error_reporting(E_ALL);
       break;
 
     case 'Wednesday':
-      $dog = '<h2>Wednesday: Miniature American Shepherd</h2>';
+      $dog = 'Wednesday: Miniature American Shepherd';
       $pic = 'american.jpg';
       $alt = 'Miniature American Shepherd';
       $content = 'The Miniature American Shepherd resembles a small Australian Shepherd. True herders in spite of their compact size, Minis are bright, self-motivated workers and endearingly loyal and lively companion dogs who have an affinity for horses.<br><br>
@@ -95,7 +95,7 @@ error_reporting(E_ALL);
       break;
 
     case 'Thursday':
-      $dog = '<h2>Thursday: Australian Shepherd</h2>';
+      $dog = 'Thursday: Australian Shepherd';
       $pic = 'aussie.jpg';
       $alt = 'Australian Shepherd';
       $content = 'The Australian Shepherd, a lean, tough ranch dog, is one of those \'only in America\' stories: a European breed perfected in California by way of Australia. Fixtures on the rodeo circuit, they are closely associated with the cowboy life.<br><br>
@@ -103,7 +103,7 @@ error_reporting(E_ALL);
       break;
 
     case 'Friday':
-      $dog = '<h2>Friday: Bouvier des Flandres</h2>';
+      $dog = 'Friday: Bouvier des Flandres';
       $pic = 'bouvier.jpg';
       $alt = 'Bouvier des Flandres';
       $content = 'They don\'t build \'em like this anymore. Burly and barrel-chested, the tousle-coated dog of Flandres is from a time and place where a dog had to work like \' well, a dog. These smart and steady all-purpose workers make excellent watchdogs.<br><br>
@@ -111,7 +111,7 @@ error_reporting(E_ALL);
       break;
 
     case 'Saturday':
-      $dog = '<h2>Belgian Maliniois</h2>';
+      $dog = 'Belgian Maliniois';
       $pic = 'malinois.jpg';
       $alt = 'Belgian Maliniois';
       $content = 'The smart, confident, and versatile Belgian Malinois is a world-class worker who forges an unbreakable bond with his human partner. To deny a Mal activity and the pleasure of your company is to deprive him of his very reasons for being.<br><br>
@@ -138,7 +138,7 @@ error_reporting(E_ALL);
   <header>
     <div class="header-inner">
       <a href="index.html">
-        <img id="logo" src="images/phplogo.jpg">
+        <img id="logo" src="images/phplogo.jpg" alt="php">
       </a>
       <nav>
         <ul>
