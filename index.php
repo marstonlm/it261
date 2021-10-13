@@ -21,9 +21,9 @@
         <ul>
           <li><a href="index.php">Home</a></li>
           <li><a href="website/index.php">Switch</a></li>
-          <li><a href="#">Emailable form</a></li>
-          <li><a href="#">Database</a></li>
-          <li><a href="#">Gallery</a></li>
+          <li><a href="comingsoon.php">Emailable form</a></li>
+          <li><a href="comingsoon.php">Database</a></li>
+          <li><a href="comingsoon.php">Gallery</a></li>
         </ul>
       </nav> 
     </div>
