@@ -20,7 +20,7 @@
       <nav>
         <ul>
           <li><a href="index.php">Home</a></li>
-          <li><a href="#">Switch</a></li>
+          <li><a href="website/index.php">Switch</a></li>
           <li><a href="#">Emailable form</a></li>
           <li><a href="#">Database</a></li>
           <li><a href="#">Gallery</a></li>
@@ -71,8 +71,11 @@
         <div>
           <h4>Week 3</h4>
           <ul class="week">
-            <li><a href="#">Coming Soon</a></li>
-            <li><a href="#">Coming Soon</a></li>
+            <li><a href="weeks/week3/date.php" target="_blank">date.php</a></li>
+            <li><a href="weeks/week3/foreach.php" target="_blank">foreach.php</a></li>
+            <li><a href="weeks/week3/forloop.php" target="_blank">forloop.php</a></li>
+            <li><a href="weeks/week3/if.php" target="_blank">if.php</a></li>
+            <li><a href="weeks/week3/switch.php" target="_blank">switch.php</a></li>
           </ul>
         </div>
         <hr>
