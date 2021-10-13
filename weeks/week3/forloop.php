@@ -8,23 +8,23 @@
   for($x = 0; $x <= 21; $x+=3) {
     echo 'The number is: '.$x.' <br>';
   }
-  echo '<br>';
+  echo '<br><hr style="color: orange"><br>';
 
   /* a for loop for our famous celcius - far converter */
   /* DO NOT call out the celcius var OUTSIDE of the loop */
   for($celcius = 0; $celcius <= 100; $celcius++) {
     $far = ($celcius * 9/5) + 32;
     $friendlyfar = floor($far);
-    echo '<b>Farenheit:</b> '.$friendlyfar.' is  <b>Celcius:</b> '.$celcius.'<br>';
+    echo '<b>Farenheit:</b> '.$friendlyfar.' is  <b>Celcius:</b> <span style="color:red; font-weight=bold;">'.$celcius.'</span><hr style="color: purple;">';
   }
 
-  echo '<br>';
+  echo '<br><hr style="color: orange"><br>';
   // kilometer and miles
-  // 1 mile is 1.6 kilometers
-  for($km = 0; $km <= 10; $km+=5) {
+  // 1 mile is 1.6 kilometers or 1 km is 0.6 miles
+  for($km = 1; $km <= 100; $km+=5) {
     $mile = ($km * .6);
     $friendlymile = ceil($mile);
-    echo '<b>Mile: <b> '.$friendlymile.' is <b>Kilometer: </b>'.$km.'<br>';
+    echo '<b>Mile: </b> '.$friendlymile.' is <b>Kilometer: </b>'.$km.'<br>';
   }
 
 
