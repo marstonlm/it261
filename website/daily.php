@@ -1,6 +1,6 @@
 <?php 
   include('includes/header.php');
-
+ 
 ?>
   <div id="wrapper">
     <h1 style="text-align:center;"><?php echo $headline;?></h1>
@@ -10,7 +10,7 @@
       <p class="textwrap-right"><?php echo $content;?></p>
     </main>
     <!-- End Main -->
-    <aside>
+    <aside style="background: <?php echo $aside_color;?>;">
     <h2 style="text-align:center;">Check out our Daily Featured Shepard</h2>
       <ul>
         <li><a href="daily.php?today=Monday">Monday</a> </li>
