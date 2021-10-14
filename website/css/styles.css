@@ -129,7 +129,7 @@ footer li {
 }
 
 .dog {
-  width: 25em;
+  max-width: 20em;
   height: auto;
   margin: 0px 15px 15px 0px;
   float: left;
