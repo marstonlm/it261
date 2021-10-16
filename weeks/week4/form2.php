@@ -31,7 +31,7 @@ if(isset($_POST['fname'],
   } else {
       echo '
       <form action="" method="post">
-        <label>FIRST NAME</fabel>
+        <label>FIRST NAME</label>
         <input type="text" name="fname">
 
         <label>LAST NAME</label>
