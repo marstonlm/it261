@@ -48,15 +48,15 @@
   <body>
     <form action="" method="post">
       <fieldset>
-      <label>FIRST NAME</label>
+      <label for="fname">FIRST NAME</label>
         <input type="text" name="fname">
 
-        <label>LAST NAME</label>
+        <label for="lname">LAST NAME</label>
         <input type="text" name="lname">
 
-        <label>EMAIL</label>
+        <label for="email">EMAIL</label>
         <input type="email" name="email">
-        <label>COMMENTS</label>
+        <label for="comments">COMMENTS</label>
           <textarea name="comments"></textarea>
         <input type="submit" value="SEND IT!!!">
       </fieldset>
