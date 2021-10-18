@@ -98,7 +98,4 @@
     ?>
   </body>
 
-  <footer>
-
-  </footer>
 </html>

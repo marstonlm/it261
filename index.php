@@ -82,8 +82,11 @@
         <div>
           <h4>Week 4</h4>
           <ul class="week">
-            <li><a href="#">Coming Soon</a></li>
-            <li><a href="#">Coming Soon</a></li>
+          <li><a href="weeks/week4/form1.php" target="_blank">form1.php</a></li>
+          <li><a href="weeks/week4/form2.php" target="_blank">form2.php</a></li>
+          <li><a href="weeks/week4/form3.php" target="_blank">form3.php</a></li>
+          <li><a href="weeks/week4/form-arithmetic.php" target="_blank">form-arithmetic.php</a></li>
+          <li><a href="weeks/week4/celcius.php" target="_blank">celcius.php</a></li>
           </ul>
         </div>
       </div>

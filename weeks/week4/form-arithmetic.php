@@ -106,7 +106,4 @@
     ?>
   </body>
 
-  <footer>
-
-  </footer>
 </html>
