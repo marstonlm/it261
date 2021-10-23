@@ -87,6 +87,7 @@
           <li><a href="weeks/week4/form3.php" target="_blank">form3.php</a></li>
           <li><a href="weeks/week4/form-arithmetic.php" target="_blank">form-arithmetic.php</a></li>
           <li><a href="weeks/week4/celcius.php" target="_blank">celcius.php</a></li>
+          <li><p style="font-weight: bolder;"><strong>Homework:</strong> <a href="adder.php" target="_blank">adder.php</a></p></li>
           </ul>
         </div>
       </div>
