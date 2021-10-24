@@ -1,0 +1,26 @@
+/* styles for the currency1 assignment */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: lightblue;
+}
+
+form {
+  width: 400px;
+  margin: 30px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+fieldset {
+  padding: 8px;
+  border: 1px solid red;
+}
