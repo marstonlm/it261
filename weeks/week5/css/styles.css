@@ -24,3 +24,25 @@ fieldset {
   padding: 8px;
   border: 1px solid red;
 }
+
+.box {
+  width: 400px;
+  margin: 10px auto;
+  padding: 8px;
+  border: 2px solid green;
+}
+
+form ul {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+input {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+input [type=radio] {
+  margin-right: 5px;
+}

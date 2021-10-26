@@ -60,10 +60,16 @@
             $currency  = $_POST['currency'];
             // when it comes to converting our rubles, yen, etc, to dollars, what is the logic?
             $dollars = $amount * $currency;
+            $friendly_dollars = floor($dollars);
+            echo '
+              <div class="box">
+                <h2>Hello, '.$name.'</h2>
+                <p>You now have '.$friendly_dollars.' American dollars, and we will be sending you an email at <b>'.$email.'</b>!</p>
+              </div>';
 
-            echo $dollars;
+            /*echo $dollars;
             echo '<br>'; 
-            echo $name;
+            echo $name;*/
 
 
           } // END elseif
