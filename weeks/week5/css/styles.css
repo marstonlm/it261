@@ -7,7 +7,7 @@
 }
 
 body {
-  background: lightblue;
+  background: beige;
 }
 
 form {
@@ -32,12 +32,6 @@ fieldset {
   border: 2px solid green;
 }
 
-form ul {
-  margin-left: 10px;
-  margin-bottom: 10px;
-  list-style: none;
-}
-
 input {
   margin-left: 10px;
   margin-bottom: 10px;
@@ -45,4 +39,24 @@ input {
 
 input [type=radio] {
   margin-right: 5px;
+}
+
+form ul {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.error {
+  margin-bottom: 3px;
+  display: block;
+  color: darkred;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+select {
+  margin-bottom: 10px;
+  display: block;
+
 }
