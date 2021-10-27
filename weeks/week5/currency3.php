@@ -125,7 +125,7 @@
             $email = $_POST['email'];
             $amount = $_POST['amount'];
             $currency = $_POST['currency'];
-            $bank = $_POST['bank']; /* without the is_numeric I was throwing -----Fatal error: Uncaught TypeError: Unsupported operand types: string * string in /opt/lampp/htdocs/repos/it261/weeks/week5/currency3.php:129 Stack trace: #0 {main} thrown in /opt/lampp/htdocs/repos/it261/weeks/week5/currency3.php on line 129----- */
+            $bank = $_POST['bank']; /* without the is_numeric I was throwing -----Fatal error: Uncaught TypeError: Unsupported operand types: string * string in /opt/lampp/htdocs/repos/it261/weeks/week5/currency3.php:129 Stack trace: #0 {main} thrown in /opt/lampp/htdocs/repos/it261/weeks/week5/currency3.php on *now* line 130 ----- */
 
             $total = $amount * $currency; // I was gettin an error type: string * string. This was how I fixed it.
             $friendly_total = floor($total);
