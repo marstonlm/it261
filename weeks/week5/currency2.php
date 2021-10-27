@@ -63,8 +63,9 @@
             echo '<span class="error">Please fill out your email</span>';
           }
 
+
           if(empty($_POST['amount'])){
-            echo '<span class="error">Please fill out your amount</span>';
+            echo '<span class="error">Please fill out the amount</span>';
           }
 
           if(empty($_POST['currency'])){
@@ -72,23 +73,23 @@
           }
 
           // if post bank is NULL, please select your bank
-          if($_POST['bank'] == NULL) {
+          if($_POST['bank'] == NULL){
             echo '<span class="error">Please choose your banking institution!</span>';
           }
 
-          if(isset(
+          elseif(isset(
             $_POST['name'],
             $_POST['email'],
             $_POST['amount'],
             $_POST['currency'],
-            $_POST['bank']
-          )) {
+            $_POST['bank']) && is_numeric($_POST['amount'])
+          ){
             $name = $_POST['name'];
             $email = $_POST['email'];
             $amount = $_POST['amount'];
             $currency = $_POST['currency'];
             $bank = $_POST['bank'];
-            $total = $amount * $currency;
+            $total = $amount * $currency; /* without the is_numeric I was throwing -----Fatal error: Uncaught TypeError: Unsupported operand types: string * string in /opt/lampp/htdocs/repos/it261/weeks/week5/currency3.php:129 Stack trace: #0 {main} thrown in /opt/lampp/htdocs/repos/it261/weeks/week5/currency3.php on  line 92 ----- */
             $friendly_total = floor($total);
 
             echo '
@@ -107,54 +108,6 @@
 
 
        } // END server request
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          // from currency1.php
-          /*if(empty(
-            $_POST['name'] && 
-            $_POST['email'] && 
-            $_POST['amount'] && 
-            $_POST['currency'])) {
-              echo '<span class="error">Please fill out ALL the fields!</span>';
-          } 
-          elseif(isset($_POST['name'], 
-          $_POST['email'],
-          $_POST['amount'],
-          $_POST['currency'])) {
-
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $amount = $_POST['amount'];
-            $currency  = $_POST['currency'];
-            // when it comes to converting our rubles, yen, etc, to dollars, what is the logic?
-            $dollars = $amount * $currency;
-            $friendly_dollars = floor($dollars);
-            echo '
-              <div class="box">
-                <h2>Hello, '.$name.'</h2>
-                <p>You now have '.$friendly_dollars.' American dollars, and we will be sending you an email at <b>'.$email.'</b>!</p>
-              </div>';
-
-            echo $dollars;
-            echo '<br>'; 
-            echo $name;
-
-
-          } */
 
       ?>
 </body>
