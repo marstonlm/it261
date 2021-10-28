@@ -90,7 +90,18 @@
           <li><p style="font-weight: bolder;"><strong>Homework:</strong> <a href="adder.php" target="_blank">adder.php</a></p></li>
           </ul>
         </div>
+        <hr>
+        <div>
+          <h4>Week 5</h4>
+          <ul class="week">
+          <li><a href="weeks/week5/currency1.php" target="_blank">currency1.php</a></li>
+          <li><a href="weeks/week5/currency2.php" target="_blank">currency2.php</a></li>
+          <li><a href="weeks/week5/currency3.php" target="_blank">currency3.php</a></li>
+          <li><a href="weeks/week5/null.php" target="_blank">null.php</a></li>
+          </ul>
+        </div>
       </div>
+
     </aside>
     <!-- End Aside -->
    
