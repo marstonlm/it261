@@ -72,9 +72,9 @@
             if($efficiency == 'Gas-Guzzler') {
               $gallons = floor($miles / 10);
             }elseif($efficiency == 'Good'){
-              $gallons = $miles / 25;
+              $gallons = floor($miles / 25);
             }elseif($efficiency == 'Great'){
-              $gallons = $miles / 35;
+              $gallons = floor($miles / 35);
             } elseif($efficiency == 'Amazing'){
               $gallons = floor($miles / 45);
             }else {
