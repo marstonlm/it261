@@ -4,25 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link href="css/styles.css" type="text/css" rel="stylesheet">
-<title>Homework 5: Our Calculator</title>
+<title>Homework 5: Our Trip Calculator</title>
 
 </head>
 <!-- calculate how many days it will take to drive 1000 miles?  3000 miles? 10,000 miles? If you drive to Bellingham from Seattle, and it is 90 miles, how long will it take you?  How do you know that? What additional variable must you declare? -->
-<body>
+<body id="day-errors">
   <header>
-    <h1>Our Calculator</h1>
+    <h1>Our Trip Calculator</h1>
   </header>
   <form action="<?php echo ($SERVER['PHP_SELF']);?>" method="post">
     <fieldset>
+      <label for="name">Your Name</label>
+      <input type="text" name="name" value="<?php if(isset($_POST['name'])) echo htmlspecialchars($_POST['name']);?>">
+
       <label for="miles">How many miles will you be driving?</label>
-      <input type="text" name="miles">
+      <input type="text" name="miles" value="<?php if(isset($_POST['miles'])) echo htmlspecialchars($_POST['miles']);?>">
+
+      <label for="hours">How many hours per day would you like to be driving?</label>
+      <input type="text" name="hours" value="<?php if(isset($_POST['hours'])) echo htmlspecialchars($_POST['miles']);?>">
 
       <!-- START PRICE -->
       <label for="price">Price Per Gallon</label>
       <ul>
-
-
-
       <li><input type="radio" name="price" value="3.00">$3.00</li>
         <li><input type="radio" name="price" value="3.50">$3.50</li>
         <li><input type="radio" name="price" value="4.00">$4.00</li>
@@ -51,23 +54,44 @@
       define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
       
       if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        if(empty(
-          $_POST['miles'] && 
-          $_POST['price'] && 
-          $_POST['efficiency'])){
-          echo '<h2 style="text-align: center;"><strong>ERROR!</strong></h2><p>Please enter a valid distance, price per gallon and fuel efficiency</p></div>';
+        if(empty($_POST['name'])){
+          echo '<div id="day-errors" class="box errors"">
+          <p>Please fill out your name.</p></div>';
         }
 
+        if(empty($_POST['miles'])){
+          echo '<div id="day-errors" class="box errors">
+          <p>Please fill out your miles.</p></div>';
+        }
+
+        if(empty($_POST['hours'])){
+          echo '<div id="day-errors" class="box errors">
+          <p>Please fill out your hours.</p></div>';
+        }
+
+        if(empty($_POST['price'])){
+          echo '<div id="day-errors" class="box errors">
+          <p>Please fill out your fuel price.</p></div>';
+        }
+
+        if($_POST['efficiency'] == NULL){
+          echo '<div id="day-errors" class="box errors"><p>Please choose your vechiles fuel efficiency</p></div>';
+        }
           
         elseif(isset($_POST['miles'], 
           $_POST['price'],
           $_POST['efficiency'])) {
 
+            $name = $_POST['name'];
             $miles = $_POST['miles'];
+            $hours = $_POST['hours'];
+            $total_hours = floor($miles / 100); // assuming 60mph
+            $daily_miles = $hours * 100;
             $price = $_POST['price'];
             $efficiency = $_POST['efficiency']; // how many miles per gallon
             $mpg;
             $gallons;
+            $days = floor($miles / $daily_miles);
 
             if($efficiency == 'Gas-Guzzler') {
               $mpg = 10;
@@ -86,12 +110,15 @@
             } // END efficiency 
 
             $cost = number_format(($price * $gallons), 2);
-            $friendly_cost = number_format($cost, 2);
+            //$friendly_cost = number_format($cost, 2);
               echo '
-                <h2 style="text-align: center;">Calculator Results</h2>
-                <p>You have driven '.$miles.' miles</p>
-                <p>Your vehicle has an efficiency rating of '.$mpg.' miles per gallon</p>
-                <p>Your total cost is $'.$cost.' dollars</p>';
+              <div id="day-errors" class="box">
+                <h2>Calculator Results</h2>
+                <p>'.$name.' you will be driving <strong>'.$miles.' miles</strong>.</p>
+                <p>Your vehicle has an efficiency rating of <strong>'.$mpg.' miles per gallon</strong>.</p>
+                <p>Your total cost for gas will be $'.$cost.' dollars.</p>
+                <p>You will be driving a total of <strong>'.$total_hours.' hours equating to '.$days.' days</strong>.</p>
+              </div>';
 
           } // END elseif
 
