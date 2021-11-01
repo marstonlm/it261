@@ -21,7 +21,7 @@
       <input type="text" name="miles" value="<?php if(isset($_POST['miles'])) echo htmlspecialchars($_POST['miles']);?>">
 
       <label for="hours">How many hours per day would you like to be driving?</label>
-      <input type="text" name="hours" value="<?php if(isset($_POST['hours'])) echo htmlspecialchars($_POST['miles']);?>">
+      <input type="text" name="hours" value="<?php if(isset($_POST['hours'])) echo htmlspecialchars($_POST['hours']);?>">
 
       <!-- START PRICE -->
       <label for="price">Price Per Gallon</label>
@@ -92,10 +92,13 @@
 
             $name = $_POST['name'];
             $miles = $_POST['miles'];
-            $hours = $_POST['hours'];
-            $total_hours = floor($miles / 100); // assuming 60mph
             $daily_miles = $hours * 100;
             $price = $_POST['price'];
+            $hours = $_POST['hours'];
+            $total_hours = floor($miles / 100); // assuming 60mph
+            if($efficiency == 0) {
+              $efficiency = 1;
+            }
             $efficiency = $_POST['efficiency']; // how many miles per gallon
             $mpg;
             $gallons;
