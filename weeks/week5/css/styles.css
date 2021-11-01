@@ -7,12 +7,17 @@
 }
 
 body {
-  background: beige;
+  background: whitesmoke;
+}
+
+h1, h2 {
+  text-align: center;
 }
 
 form {
   width: 400px;
   margin: 30px auto;
+  background: beige;
 }
 
 label {
@@ -29,7 +34,7 @@ fieldset {
   width: 400px;
   margin: 10px auto;
   padding: 8px;
-  border: 2px solid green;
+  border: 2px solid black;
 }
 
 input {
@@ -58,4 +63,36 @@ select {
   margin-bottom: 10px;
   display: block;
 
+}
+
+/* ----- styles for caluclator homework ----- */
+/* ----- START DAYS id of days ----- */
+
+
+#days form {
+  width: 600px;
+  margin: 30px auto;
+}
+
+#days .box{
+  width: 600px;
+  margin: 10px auto;
+  padding: 8px;
+  border: 2px solid black;
+  color: black;
+  font-size: 1.4em;
+}
+
+#days h2 {
+  margin-bottom: 3px;
+  display: block;
+  color: red;
+  font-weight: bold;
+}
+
+
+/* ----- START DAYS-ERRORS id of day-errors ----- */
+#day-errors .errors {
+  color: red;
+  font-weight: bolder;
 }
