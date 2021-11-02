@@ -27,6 +27,7 @@ error_reporting(E_ALL);
 
 
   if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
     if(empty($_POST['first_name'])) {
       $first_name_Err = 'Please fill out your First Name';
     } else {
@@ -75,7 +76,38 @@ error_reporting(E_ALL);
       $comments = $_POST['comments'];
     }
 
-  }
+    // STARTing the email portion
+    // says all must be completed
+    if(isset($_POST['first_name'],  
+    $_POST['last_name'],  
+    $_POST['email'],  
+    $_POST['gender'],  
+    $_POST['wines'],  
+    $_POST['regions'],  
+    $_POST['comments'], 
+    $_POST['privacy'] )) {
+
+      //creating email to receive to receive form
+
+      $to = 'luann.webster@seattlecentral.edu'; // assigning email to be sent to
+      $subject = 'Test Email,' .date('m/d/y');
+       // what is it we want it to say in this email
+      $body = '
+      The first name is '.$first_name.' '.PHP_EOL.'
+      The last name is '.$last_name.' '.PHP_EOL.'
+      Gender: '.$gender.' '.PHP_EOL.'
+      Region: '.$regions.' '.PHP_EOL.'
+      Comments: '.$comments.' '.PHP_EOL.'
+      ';
+
+      // mail function
+      mail($to, $subject, $body); // in the email include the to subject and body
+      header('Location: thx.php'); // the thx.php would be the page our sender will see once form is submitted
+
+    }
+
+
+  } // end of server request
 
     
 
