@@ -58,7 +58,7 @@ error_reporting(E_ALL);
   echo '<br>';
   echo '<br>';
 
-  // the return allows us to call out the function in different places on the page
+  // the return allows us to call out the function in different places on the page 
   echo '<h2>Using \'return\'</h2>';
   function celcius_converter($temp){
     $far = ($temp * 9/5) + 32; 
