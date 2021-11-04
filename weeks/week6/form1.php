@@ -10,6 +10,7 @@ error_reporting(E_ALL);
   $first_name = '';
   $last_name = '';
   $email = '';
+  $phone = '';
   $gender = '';
   $wines = '';
   $regions = '';
@@ -20,6 +21,7 @@ error_reporting(E_ALL);
   $first_name_Err = '';
   $last_name_Err = '';
   $email_Err = '';
+  $phone_Err = '';
   $gender_Err = '';
   $wines_Err = '';
   $regions_Err = '';
@@ -52,6 +54,17 @@ error_reporting(E_ALL);
     } else {
       $email = $_POST['email'];
     }
+
+    if(empty($_POST['phone'])) {  // if empty, type in your number
+      $phone_Err = 'Your enter your phone number';
+      } elseif(array_key_exists('phone', $_POST)){
+      if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
+      { // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
+      $phone_Err = 'Invalid format!';
+      } else{
+      $phone = $_POST['phone'];
+      }
+      }
 
     if(empty($_POST['wines'])) {
       $wines_Err = 'Please choose your favorite wines';
@@ -95,6 +108,7 @@ error_reporting(E_ALL);
     if(isset($_POST['first_name'],  
     $_POST['last_name'],  
     $_POST['email'],  
+    $_POST['phone'],
     $_POST['gender'],  
     $_POST['wines'],  
     $_POST['regions'],  
@@ -107,17 +121,24 @@ error_reporting(E_ALL);
     $subject = 'Test Email,' .date('m/d/y');
      // what is it we want it to say in this email
     $body = '
-      The first name is '.$first_name.' '.PHP_EOL.'
-      The last name is '.$last_name.' '.PHP_EOL.'
+      The first name is: '.$first_name.' '.PHP_EOL.'
+      The last name is: '.$last_name.' '.PHP_EOL.'
+      Email: '.$email.' '.PHP_EOL.'
+      Phone number: '.$phone.' '.PHP_EOL.'
       Gender: '.$gender.' '.PHP_EOL.'
       Region: '.$regions.' '.PHP_EOL.'
       Wines: '.my_wines().' '.PHP_EOL.'
       Comments: '.$comments.' '.PHP_EOL.'
       ';
 
+      $headers = array(
+        'From' => 'noreply@seattlecentral.edu',
+        'Reply-to' => ''.$email.''
+      );
+
 
     // mail function
-    mail($to, $subject, $body); // in the email include the to subject and body
+    mail($to, $subject, $body, $headers); // in the email include the to subject and body
     header('Location: thx.php'); // the thx.php would be the page our sender will see once form is submitted
 
     } // ENDs isset
@@ -158,6 +179,14 @@ error_reporting(E_ALL);
       if(isset($_POST['email'])) echo htmlspecialchars( $_POST['email']); ?>">
       <span class="error">
         <?php echo $email_Err; ?>
+      </span>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" value="<?php
+      if(isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']); 
+      ?>">
+      <span class="error">
+        <?php echo $phone_Err; ?>
       </span>
 
 
