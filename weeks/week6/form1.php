@@ -16,6 +16,7 @@ error_reporting(E_ALL);
   $comments = '';
   $privacy = '';
 
+  // ERROR varabiles
   $first_name_Err = '';
   $last_name_Err = '';
   $email_Err = '';
@@ -76,6 +77,19 @@ error_reporting(E_ALL);
       $comments = $_POST['comments'];
     }
 
+    /* IMPLODE
+     the logic is if post wines IS NOT empty, the, we need to grab the wines and displayt them, just like we did in our implode.php */
+
+    function my_wines() {
+      $my_return = '';
+      if(!empty($_POST['wines'])) {
+        $my_return =  implode(', ', $_POST['wines']);
+      } // closes if statement
+
+      return $my_return;
+    } // closes function
+
+
     // STARTing the email portion
     // says all must be completed
     if(isset($_POST['first_name'],  
@@ -87,29 +101,29 @@ error_reporting(E_ALL);
     $_POST['comments'], 
     $_POST['privacy'] )) {
 
-      //creating email to receive to receive form
+    //creating email to receive to receive form
 
-      $to = 'luann.webster@seattlecentral.edu'; // assigning email to be sent to
-      $subject = 'Test Email,' .date('m/d/y');
-       // what is it we want it to say in this email
-      $body = '
+    $to = 'luann.webster@seattlecentral.edu'; // assigning email to be sent to
+    $subject = 'Test Email,' .date('m/d/y');
+     // what is it we want it to say in this email
+    $body = '
       The first name is '.$first_name.' '.PHP_EOL.'
       The last name is '.$last_name.' '.PHP_EOL.'
       Gender: '.$gender.' '.PHP_EOL.'
       Region: '.$regions.' '.PHP_EOL.'
+      Wines: '.my_wines().' '.PHP_EOL.'
       Comments: '.$comments.' '.PHP_EOL.'
       ';
 
-      // mail function
-      mail($to, $subject, $body); // in the email include the to subject and body
-      header('Location: thx.php'); // the thx.php would be the page our sender will see once form is submitted
 
-    }
+    // mail function
+    mail($to, $subject, $body); // in the email include the to subject and body
+    header('Location: thx.php'); // the thx.php would be the page our sender will see once form is submitted
+
+    } // ENDs isset
 
 
   } // end of server request
-
-    
 
 ?>
 <!doctype html>
