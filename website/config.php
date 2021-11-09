@@ -2,7 +2,8 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-  define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
+define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
+date_default_timezone_set('America/Los_Angeles');
 
   $nav['../index.php'] = 'Portal';
   $nav['index.php'] = 'Home';
@@ -54,7 +55,7 @@ error_reporting(E_ALL);
   }
 
 // START of daily switch theme: DOGS 
-  date_default_timezone_set('America/Los_Angeles');
+ // date_default_timezone_set('America/Los_Angeles');
   if(isset($_GET['today'])) {
     $today = $_GET['today'];
   } else {
@@ -134,3 +135,7 @@ error_reporting(E_ALL);
     default:
       break;
   }
+
+
+  // emailable Form
+  ?>
