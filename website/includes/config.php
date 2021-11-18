@@ -135,7 +135,41 @@ date_default_timezone_set('America/Los_Angeles');
     default:
       break;
   }
+/* ----- END DAILY ----- */
+
+/* ----- START CONTACT FORM ----- */
+
+// GLOBAL VARABILES
+$first_name = '';
+$last_name = '';
+$email = '';
+$phone = '';
+$owner = '';
+
+// ERROR varabiles
+$first_name_Err = '';
+$last_name_Err = '';
+$email_Err = '';
+$phone_Err = '';
+$owner_Err = '';
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if(empty($_POST['first_name'])) {
+    $first_name_Err = 'Please fill out your first name.';
+  } else {
+    $first_name = $_POST['first_name'];
+  }
+
+  if(empty($_POST['last_name'])) {
+    $last_name_Err = 'Please fill out your last name.';
+  } else {
+    $last_name = $_POST['last_name'];
+  }
 
 
-  // emailable Form
+} // end of server request
+
+/* ----- END CONTACT FORM ----- */
+
+
   ?>
