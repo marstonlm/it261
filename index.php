@@ -125,6 +125,7 @@
           <h4>Week 7</h4>
           <ul class="week">
             <li><a href="weeks/week7/random.php" target="_blank">random.php</a></li>
+            <li><a href="weeks/week7/string.php" target="_blank">string.php</a></li>
           </ul>
         </div>
       </div>
