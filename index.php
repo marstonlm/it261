@@ -108,6 +108,17 @@
             </li>
           </ul>
         </div>
+
+        <hr>
+        <div>
+          <h4>Week 6</h4>
+          <ul class="week">
+            <li><a href="weeks/week6/form1.php" target="_blank">form1.php</a></li>
+            <li><a href="weeks/week6/functions.php" target="_blank">functions.php</a></li>
+            <li><a href="weeks/week6/implode.php" target="_blank">implode.php</a></li>
+            <li><a href="weeks/week5/null.php" target="_blank">null.php</a></li>
+          </ul>
+        </div>
       </div>
 
     </aside>

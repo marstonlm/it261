@@ -1,0 +1,34 @@
+/* styles for week six form1 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: lightskyblue;
+}
+
+/* form styles */
+
+form {
+  width: 400px;
+  margin: 20px auto;
+}
+
+fieldset {
+  padding: 25px;
+}
+
+label {
+  display: block;
+}
+
+.error {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: red;
+  font-style: italic;
+}
