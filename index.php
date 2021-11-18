@@ -119,6 +119,16 @@
             <li><a href="weeks/week5/null.php" target="_blank">null.php</a></li>
           </ul>
         </div>
+
+        <hr>
+        <div>
+          <h4>Week 7</h4>
+          <ul class="week">
+            <li><a href="weeks/week7/random.php" target="_blank">random.php</a></li>
+            <li><a href="weeks/week7/string.php" target="_blank">string.php</a></li>
+            <li><a href="weeks/week7/pictures.php" target="_blank">pictures.php</a></li>
+          </ul>
+        </div>
       </div>
 
     </aside>
