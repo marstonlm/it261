@@ -49,13 +49,29 @@
             <li><input type="checkbox" name="breeds[]" value="dane">Great Dane</li>
           </ul>
 
-          <label for="regions">Regions</label>
-          <select name="regions">
+          <label for="group">Breed Group</label>
+          <select name="group">
+            <option value="" NULL>Select One</option>
+
+            <option value="herd">Hearding Breeds</option>
+
+            <option value="hound">Hound Breeds</option>
+
+            <option value="toy">Non-Sporting Breeds</option>
+
+            <option value="hound">Sporting Breeds</option>
+
+            <option value="hound">Terrier Breeds</option>
+
+            <option value="hound">Working Breeds</option>
+
+            <option value="hound">Miscellaneous Breeds</option>
+
           </select>
         </fieldset>
 
-          <input type="submit" value="Send It">
-          <p><a href="">Reset</a></p>
+        <input type="submit" value="Send It">
+        <p><a href="">Reset</a></p>
 
         
     </form>
