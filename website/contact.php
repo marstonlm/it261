@@ -44,9 +44,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   }
 
   if(empty($_POST['phone'])) {
-    $phone_Err = 'Please enter your phone number.';
-  } else {
-    $phone = $_POST['phone'];
+    $phone_Err = 'Enter your phone number';
+  } elseif(array_key_exists('phone', $_POST)) {
+    if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
+      $phone_Err = 'Invalid format!';
+    } else {
+      $phone = $_POST['phone'];
+    }
   }
 
   if(empty($_POST['owner'])) {
@@ -88,7 +92,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     return $my_return;
   } // close breed function
 
-  /*
+  
   if(isset($_POST['first_name'],
   $_POST['last_name'],
   $_POST['email'],
@@ -121,7 +125,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     header('Location: thx.php');
 
   } // END email isset
-*/
 
 } // end of server request
 
