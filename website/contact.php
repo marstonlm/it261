@@ -1,5 +1,132 @@
 <?php include 'includes/header.php';?>
-<?php include 'includes/config.php';?>
+<?php
+/* ----- START CONTACT FORM ----- */
+
+// GLOBAL VARABILES
+$first_name = '';
+$last_name = '';
+$email = '';
+$phone = '';
+$owner = '';
+$breeds = '';
+$groups = '';
+$comments = '';
+$privacy = '';
+
+// ERROR varabiles
+$first_name_Err = '';
+$last_name_Err = '';
+$email_Err = '';
+$phone_Err = '';
+$owner_Err = '';
+$breeds_Err = '';
+$groups_Err = '';
+$comments_Err = '';
+$privacy_Err = '';
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if(empty($_POST['first_name'])) {
+    $first_name_Err = 'Please fill out your first name.';
+  } else {
+    $first_name = $_POST['first_name'];
+  }
+
+  if(empty($_POST['last_name'])) {
+    $last_name_Err = 'Please fill out your last name.';
+  } else {
+    $last_name = $_POST['last_name'];
+  }
+
+  if(empty($_POST['email'])){
+    $email_Err = 'Please enter your email';
+  } else {
+    $email = $_POST['email'];
+  }
+
+  if(empty($_POST['phone'])) {
+    $phone_Err = 'Please enter your phone number.';
+  } else {
+    $phone = $_POST['phone'];
+  }
+
+  if(empty($_POST['owner'])) {
+    $owner_Err = 'Please let us know if you have a dog.';
+  } else {
+    $owner = $_POST['owner'];
+  }
+
+  if(empty($_POST['breeds'])) {
+    $breeds_Err = 'Please let us know your favorite breeds are.';
+  } else {
+    $breeds = $_POST['breeds'];
+  }
+
+  if($_POST['groups'] == NULL) {
+    $groups_Err = 'Please select your favorite breed group.';
+  } else {
+    $groups = $_POST['groups'];
+  }
+
+  if(empty($_POST['comments'])) {
+    $comments_Err = 'Let us know what you think. Please leave a comment';
+  } else {
+    $comments = $_POST['comments'];
+  }
+
+  if(empty($_POST['privacy'])) {
+    $privacy_Err = 'You MUST agree';
+  } else {
+    $privacy = $_POST['privacy'];
+  }
+
+  function my_breeds() {
+    $my_return = '';
+    if(!empty($_POST['breeds'])) {
+      $my_return = implode(', ', $_POST['breeds']);
+    }
+
+    return $my_return;
+  } // close breed function
+
+  /*
+  if(isset($_POST['first_name'],
+  $_POST['last_name'],
+  $_POST['email'],
+  $_POST['phone'],
+  $_POST['owner'],
+  $_POST['breeds'],
+  $_POST['groups'],
+  $_POST['comments'],
+  $_POST['privacy'])) {
+
+    $to = 'luann.webster@seattlecentral.edu'; // assigned email address to send form to
+    $subject = 'Dog Stuff,' .date('m/d/y');
+
+    $body = '
+      First name: '.$first_name.' '.PHP_EOL.'
+      Last name: '.$last_name.' '.PHP_EOL.'
+      Email: '.$email.' '.PHP_EOL.'
+      Phone: '.$phone.' '.PHP_EOL.'
+      Dog owner: '.$owner.' '.PHP_EOL.'
+      Faveriote Breeds: '.my_breeds().' '.PHP_EOL.'
+      Favorite Group: '.$groups.' '.PHP_EOL.'
+      ';
+
+    $headers = array(
+      'From' => 'noreply@seattlecentral.edu',
+      'Reply-to' => ''.$email.'');
+    
+    // mail function
+    mail($to, $subject, $body, $headers);
+    header('Location: thx.php');
+
+  } // END email isset
+*/
+
+} // end of server request
+
+/* ----- END CONTACT FORM ----- */
+?>
 
   <div id="wrapper">
     
