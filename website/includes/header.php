@@ -12,7 +12,7 @@
 <body class="<?php echo $body;?>" style="background: <?php echo $body_color;?>;">
   <header>
     <div class="header-inner">
-      <a href="index.html">
+      <a href="index.php">
         <img id="logo" src="images/phplogo.jpg" alt="php">
       </a>
       <nav>
