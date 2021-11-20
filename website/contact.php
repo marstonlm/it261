@@ -1,4 +1,3 @@
-<?php include 'includes/header.php';?>
 <?php
 /* ----- START CONTACT FORM ----- */
 
@@ -130,12 +129,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 /* ----- END CONTACT FORM ----- */
 ?>
+<?php include 'includes/header.php';?>
+
 
   <div id="wrapper">
     
     <main>
       <h1><?php echo $headline;?></h1>
-      <p>Id java pumpkin spice, acerbic cortado pumpkin spice aged aromatic. Single origin espresso mug cinnamon mazagran, single origin bar  robusta breve froth fair trade robust. Cup macchiato and black grounds percolator single origin. Robusta cultivar redeye bar , strong crema galão instant pumpkin spice foam.</p>
+      <p>yeah Id java pumpkin spice, acerbic cortado pumpkin spice aged aromatic. Single origin espresso mug cinnamon mazagran, single origin bar  robusta breve froth fair trade robust. Cup macchiato and black grounds percolator single origin. Robusta cultivar redeye bar , strong crema galão instant pumpkin spice foam.</p>
       <h2>Please fill out our form</h2>
 
 
@@ -244,9 +245,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <option value="terrier"
             <?php if(isset($_POST['groups']) && $_POST['groups'] == 'terrier') echo 'selected="unselected"'; ?>>Terrier Breeds</option>
 
-            <option value="work">Working Breeds</option>
+            <option value="work"
+            <?php if(isset($_POST['groups']) && $_POST['groups'] == 'work') echo 'selected="unselected"'; ?>>Working Breeds</option>
 
-            <option value="misc">Miscellaneous Breeds</option>
+            <option value="misc" 
+            <?php if(isset($_POST['groups']) && $_POST['groups'] == 'misc') echo 'selected="unselected"'; ?>>Miscellaneous Breeds</option>
 
           </select>
           <span class="error">
