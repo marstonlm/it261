@@ -143,6 +143,22 @@ date_default_timezone_set('America/Los_Angeles');
   }
 /* ----- END DAILY ----- */
 
+/* ----- START RANDOM IMAGES ----- */
+
+$photos = array(
+  'photo1',
+  'photo2',
+  'photo3',
+  'photo4',
+  'photo5'
+);
+
+$photos[0] = 'photo1';
+$photos[1] = 'photo2';
+$photos[2] = 'photo3';
+$photos[3] = 'photo4';
+$photos[4] = 'photo5';
+
 
 
 

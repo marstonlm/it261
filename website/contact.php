@@ -129,7 +129,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 /* ----- END CONTACT FORM ----- */
 ?>
-<?php include 'includes/header.php';?>
+<?php
+include ('config.php');
+include 'includes/header.php';?>
 
 
   <div id="wrapper">

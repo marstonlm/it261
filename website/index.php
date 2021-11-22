@@ -1,10 +1,32 @@
-<?php include 'includes/header.php';?>
+<?php
+include ('config.php');
+include 'includes/header.php';?>
 
   <div id="wrapper">
-    <div id="hero">
-    
+    <div id="hero" class="text-center">
+      <?php echo random_pics($photos); ?>
+      <h2>
+        <pre>
+          <br>
+          <?php
+          
+          
+          function random_pics($photos) {
+          
+          $photos[0] = 'photo1';
+          $photos[1] = 'photo2';
+          $photos[2] = 'photo3';
+          $photos[3] = 'photo4';
+          $photos[4] = 'photo5';
+          
+          $i = rand(0, 4); // function is being passed to i 
+          $selected_image = ''.$photos[$i].'.jpg'; 
+          echo '<img src="images/'.$selected_image.'"  class="rand-pic">';
+          }
+          ?>
 
-
+        </pre>
+      </h2>
       
     </div>
     <!-- End Hero-->
