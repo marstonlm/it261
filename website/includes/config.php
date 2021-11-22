@@ -40,7 +40,7 @@ date_default_timezone_set('America/Los_Angeles');
       break;
           
     case 'contact.php':
-      $title = 'Contact page of IT261 Website';
+      $title = 'Contact Me';
       $body = 'contact inner';
       $headline = 'Welcome to my Contact page of IT 261 Website';
       break;      
@@ -50,6 +50,12 @@ date_default_timezone_set('America/Los_Angeles');
       $body = 'gallery inner';
       $headline = 'Welcome to my Gallery page of IT 261 Website';
       break;
+
+    case 'thx.php':
+      $title = 'Thank You';
+      $body = 'thx inner';
+      $headline = 'Thank You';
+      break; 
 
     default:
   }
