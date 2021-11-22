@@ -1,7 +1,10 @@
-<?php include 'includes/header.php';?>
+<?php
+include ('config.php');
+include 'includes/header.php';?>
 
   <div id="wrapper">
     <div id="hero">
+      <?php echo random_pics($photos);   ?>
     
 
 
