@@ -246,7 +246,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   $_POST['comments'],
   $_POST['privacy'])) {
 
-    $to = 'luann.webster@seattlecentral.edu'; // assigned email address to send form to
+    $to = 'szemeo@mystudentswa.com'; // assigned email address to send form to
     $subject = 'Dog Stuff,' .date('m/d/y');
 
     $body = '
