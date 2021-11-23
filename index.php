@@ -129,6 +129,13 @@
             <li><a href="weeks/week7/pictures.php" target="_blank">pictures.php</a></li>
           </ul>
         </div>
+        <hr>
+        <div>
+          <h4>Week 8</h4>
+          <ul class="week">
+            <li><a href="#" target="_blank">#</a></li>
+          </ul>
+        </div>
       </div>
 
     </aside>
