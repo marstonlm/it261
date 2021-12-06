@@ -6,9 +6,9 @@
 
 
 
-  define('DB_NAME', '      ');
-  define('DB_USER', '       ');
-  define('DB_PASSWORD', '       ');
+  define('DB_NAME', 'luannmarstoncom_fall2021');
+  define('DB_USER', 'lm_fall2021_user');
+  define('DB_PASSWORD', 'k3Gj4ccx?H');
   define('DB_HOST', 'mysql.luannmarston.com');
 
 ?>

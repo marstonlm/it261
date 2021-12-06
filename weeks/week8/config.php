@@ -1,9 +1,4 @@
 <?php
-  ini_set('display_errors', 1);
-  ini_set('display_startup_errors', 1);
-  error_reporting(E_ALL);
-  define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
-
   ob_start();  // prevents header errors before reading the whole page!
   define('DEBUG', 'TRUE');  // We want to see our errors
 
