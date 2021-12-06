@@ -4,21 +4,7 @@
 
   include('credentials.php');
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+  
 
   function myError($myFile, $myLine, $errorMsg)
   {

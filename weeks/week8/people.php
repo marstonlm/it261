@@ -10,6 +10,7 @@
 
   // for big database assignment, header include will go here
   // grab the table and assign it to a variable
+  //$sql = 'SELECT * FROM people';
   $sql = 'SELECT * FROM people';
 
   // need to connect to the database using mysqli_connect() function
@@ -31,7 +32,6 @@
       echo '<li>'.$row['last_name'].'</li>';
       echo '<li>'.$row['email'].'</li>';
       echo '</ul>';
-
     } // close while loop
   } //close if statement
   else {
@@ -40,9 +40,5 @@
 
   mysqli_free_result($result);
   mysqli_close($iConn);
-
-  
-
-
 
 ?>
