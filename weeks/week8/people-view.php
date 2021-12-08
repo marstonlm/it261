@@ -1,4 +1,4 @@
-<?php
+<?php // people-view.php
   include('config.php');
 
   
@@ -33,23 +33,32 @@
     $feedback = 'Something is not working!';
   }
 
-  // for BIG ASSIGNMENT, now call out the header include
+  include('includes/header.php');  // for BIG ASSIGNMENT, now call out the header include
 ?>
 
-<h2>Welcom to <?php echo $first_name;?> page!</h2>
-<?php
-  if($feedback == '') {
-    echo '<ul>';
-    echo '<li><b>First Name:</b> '.$first_name.'</li>';
-    echo '<li><b>Last Name:</b> '.$last_name.'</li>';
-    echo '<li><b>Email:</b> '.$email.'</li>';
-    echo '<li><b>Birthdate:</b> '.$birthdate.'</li>';
-    echo '<li><b>Occupation:</b> '.$occupation.'</li>';
-    echo '</ul>';
-    echo '<p>'.$description.'</p>';
-    echo '<p>Return back to the <a href="people.php">to people page!</a></p>';
-  }
+  <main>
+    <h1>Welcome to <?php echo $first_name;?> page!</h1>
 
+    <?php
+      if($feedback == '') {
+        echo '<ul>';
+        echo '<li><b>First Name:</b> '.$first_name.'</li>';
+        echo '<li><b>Last Name:</b> '.$last_name.'</li>';
+        echo '<li><b>Email:</b> '.$email.'</li>';
+        echo '<li><b>Birthdate:</b> '.$birthdate.'</li>';
+        echo '<li><b>Occupation:</b> '.$occupation.'</li>';
+        echo '</ul>';
+        echo '<p>'.$description.'</p>';
+        echo '<p>Return back to the <a href="people.php">to people page!</a></p>';
+      }
+    ?>
+    
+  </main>
+  <aside>
+
+  </aside>
+</div> <!-- end wrapper -->
+<?php
   mysqli_free_result($result);
   mysqli_close($iConn);
-?>
+  include('includes/footer.php');

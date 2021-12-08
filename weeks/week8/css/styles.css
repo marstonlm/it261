@@ -1,0 +1,32 @@
+/* styles for week 8 class exercise */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: boarderbox;
+}
+
+body {
+  background: beige;
+}
+
+#wrapper {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+main {
+  float: left;
+  width: 63%;
+}
+
+aside {
+  float: right;
+  width: 34%;
+  background: lightgreen;
+  height: 300px;
+}
+
+footer {
+  clear: both;
+}
