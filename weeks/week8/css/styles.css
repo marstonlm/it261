@@ -10,6 +10,10 @@ body {
   background: beige;
 }
 
+p {
+  padding-top: 10px;
+}
+
 #wrapper {
   max-width: 1100px;
   margin: 20px auto;
@@ -20,13 +24,34 @@ main {
   width: 63%;
 }
 
+ul {
+  padding: 5px;
+}
+
 aside {
-  float: right;
   width: 34%;
-  background: lightgreen;
   height: 300px;
+  display: flex;
+  float: right;
+  justify-content: center;
+  background: lightgreen;
+}
+
+.color-transparent {
+  background: transparent;
+}
+ 
+img {
+
+  margin: auto;
+  display: block;
+  border: 5px solid darkgreen;
 }
 
 footer {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-top: 1px dotted rgba(58, 23, 114, .50);
   clear: both;
 }

@@ -54,7 +54,7 @@
     ?>
 
   </main>
-  <aside>
+  <aside class="color-transparent">
     <?php
       if($feedback == '') {
         echo '<img src="images/people'.$id.'.jpg" alt"'.$first_name.'">';
