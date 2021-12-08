@@ -52,9 +52,17 @@
         echo '<p>Return back to the <a href="people.php">to people page!</a></p>';
       }
     ?>
-    
+
   </main>
   <aside>
+    <?php
+      if($feedback == '') {
+        echo '<img src="images/people'.$id.'.jpg" alt"'.$first_name.'">';
+
+      }
+
+
+    ?>
 
   </aside>
 </div> <!-- end wrapper -->
