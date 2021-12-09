@@ -15,8 +15,8 @@
         <li>All Rights Reserved</li>
         <li><a href="#">Terms of use</a></li>
         <li><a href="#">Web Design by Luann Marston</a></li>
-        <li><a href="https://validator.w3.org/">HTML Validation</a></li>
-        <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validation</a></li>
+        <li><a href="https://validator.w3.org/check?uri=referer" target="_blank">HTML Validation</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">CSS Validation</a></li>
       </ul>
 
     </footer>

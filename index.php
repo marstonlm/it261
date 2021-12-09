@@ -150,8 +150,8 @@
         <li class="gradient">Copyright &copy; 2019-2021 ~ All Rights Reserved</li>
         <li><a href="disclaimer.php">Terms of use</a></li>
         <li><a href="https://luannmarston.com" target="_blank">Designed by Luann Marston</a></li>
-        <li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.luannmarston.com%2Fit261%2Findex.php" target="_blank">HTML Validation</a></li>
-        <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwww.luannmarston.com%2Fit261%2Findex.php&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">CSS Validations</a></li>
+        <li><a href="https://validator.w3.org/check?uri=referer" target="_blank">HTML Validation</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">CSS Validation</a></li>
       </ul>
     </div>
 
